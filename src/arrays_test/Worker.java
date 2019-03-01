@@ -3,7 +3,7 @@ package arrays_test;
 public class Worker {
     private String name;
     private int age;
-
+///FIXME: Make an abstract factory for workers.
     public Worker(String name, int age) {
         this.name = name;
         this.age = age;

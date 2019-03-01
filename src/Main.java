@@ -7,14 +7,22 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Worker [] workers = {new Worker(RandomValues.getRandomName(),RandomValues.getRandomAge(30,18)),new Worker(RandomValues.getRandomName(),RandomValues.getRandomAge(30,18)),new Worker(RandomValues.getRandomName(),RandomValues.getRandomAge(30,18))};
 
-        for (Worker p :
-                workers) {
-            System.out.println("Worker`s name is " + p.getName() + " and age is " +p.getAge());
+
+
+
+
+        for (int i = 0; i < 20; i++) {
+            for (int j = 0; j < 20 - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k < (2 * i + 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
 
 
 
-        }
+    }
 }
